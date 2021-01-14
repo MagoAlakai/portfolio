@@ -1,0 +1,103 @@
+#body {
+  background: url('/assets/img/Fondo\ Portafolio.jpg');
+  min-height: 100vh;
+}
+
+.text{
+  color:white,
+}
+
+#home{
+  font-family: "Raleway";
+  -webkit-font-smoothing: antialiased;
+  font-size: 32pt;
+  line-height: 22pt;
+  color: #fff;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 50%;
+  text-align: center;
+}
+
+.button {
+  border: 1.5px solid #fff;
+  color: #fff;
+  box-sizing: inherit;
+  display: inline-block;
+  font-size: 15pt;
+  padding: 10px 20px;
+  transition: all 1s;
+  background: transparent;
+}
+
+.button:hover{
+  background: rgb(70, 189, 236) !important;
+  border: 2px solid rgb(70, 189, 236);
+}
+
+.highlight {
+  color: #e31b6d;
+}
+
+.a{
+  text-decoration:none;
+  color: #fff;
+}
+
+
+@media (max-width: 767.98px) {
+  #home{
+    font-family: "Raleway";
+    -webkit-font-smoothing: antialiased;
+    font-size: 17pt;
+    line-height: 20pt;
+    color: #fff;
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 80%;
+    text-align: center;
+  }
+  .button {
+    border: 1.5px solid #fff;
+    color: #fff;
+    box-sizing: inherit;
+    display: inline-block;
+    font-size: 12pt;
+    padding: 10px 20px;
+    transition: all 1s;
+    background: transparent;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #home{
+    font-family: "Raleway";
+    -webkit-font-smoothing: antialiased;
+    font-size: 20pt;
+    line-height: 20pt;
+    color: #fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 80%;
+    text-align: center;
+  }
+  .button {
+    border: 1.5px solid #fff;
+    color: #fff;
+    box-sizing: inherit;
+    display: inline-block;
+    font-size: 13pt;
+    padding: 10px 20px;
+    transition: all 1s;
+    background: transparent;
+  }
+}
+
+
+

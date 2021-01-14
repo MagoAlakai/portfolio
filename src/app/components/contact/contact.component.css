@@ -1,0 +1,31 @@
+#container {
+  background: url('/assets/img/fondo_FINAL.png');
+  min-height: 100vh;
+}
+
+@media (min-width: 991.98px) {
+  form {
+    max-width: 75%;
+  }
+  #alert{
+    margin-top:20px;
+    margin-left: 60px;
+    margin-right: 60px;
+
+
+  }
+}
+
+@media (max-width: 767.98px) {
+  h1 {
+    padding-left: 15px;
+    font-size:xx-large;
+  }
+  hr{
+    max-width: 90%;
+  }
+  #alert{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
