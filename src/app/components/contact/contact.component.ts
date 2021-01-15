@@ -33,11 +33,7 @@ export class ContactComponent implements OnInit {
     const editor: HTMLDivElement = (document.getElementById('alert') as HTMLDivElement);
     editor.classList.remove('d-none');
     setTimeout(()=> editor.classList.add('d-none'), 4000);
-    this.irHome();
   }
 
-  irHome(): void{
-    setTimeout(()=> this.router.navigate(['/home']), 4000);
-  }
 
 }

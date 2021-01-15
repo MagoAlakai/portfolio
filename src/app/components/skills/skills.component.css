@@ -1,6 +1,16 @@
+/*Estilos generales del componente */
+
 #container {
-  background: url('/assets/img/fondo_FINAL.png');
+  background-color:snow;
   min-height: 100vh;
+}
+
+/*Break point para adaptar cabecera */
+
+@media (min-width: 991.98px) {
+  .container{
+    min-height: 82vh;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -10,5 +20,8 @@
   }
   hr{
     max-width: 90%;
+  }
+  .container{
+    min-height: 80vh;
   }
 }

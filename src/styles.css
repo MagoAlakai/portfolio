@@ -1,3 +1,5 @@
+/*Estilos generales*/
+
 * {
   font-family: "Raleway";
 }
@@ -11,6 +13,9 @@ p{
   color: grey;
 }
 
+
+/*Animación para fade in en los componentes*/
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -21,6 +26,13 @@ p{
 .fast {
   -webkit-animation-duration: 0.4s;
   animation-duration: 0.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.slow {
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -37,6 +49,8 @@ p{
 .fadeIn {
   animation-name: fadeIn;
 }
+
+/*Break points para cabeceras de componentes*/
 
 @media (max-width: 767.98px) {
   h1 {

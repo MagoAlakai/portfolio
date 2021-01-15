@@ -1,7 +1,11 @@
-#container {
-  background: url('/assets/img/fondo_FINAL.png');
-  min-height: 100vh;
+/*Estilos generales del componente */
+
+body {
+  background-color:snow;
+  height: 100vh;
 }
+
+/*Break points para adaptar estilos*/
 
 @media (min-width: 991.98px) {
   form {
@@ -11,12 +15,14 @@
     margin-top:20px;
     margin-left: 60px;
     margin-right: 60px;
-
-
+  }
+  .container{
+    min-height: 77vh;
   }
 }
 
-@media (max-width: 767.98px) {
+
+@media (max-width: 991.98px) {
   h1 {
     padding-left: 15px;
     font-size:xx-large;
@@ -28,4 +34,11 @@
     margin-left: 10px;
     margin-right: 10px;
   }
+  form{
+    padding-top: 30px !important;
+  }
+  .container{
+    min-height: 80vh;
+  }
+
 }

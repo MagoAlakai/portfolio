@@ -1,10 +1,21 @@
-#body {
+/*Estilos generales del componente */
+
+body {
   background: url('/assets/img/Fondo\ Portafolio.jpg');
   min-height: 100vh;
 }
 
 .text{
   color:white,
+}
+
+.highlight {
+  color: #e31b6d;
+}
+
+.a{
+  text-decoration:none;
+  color: #fff;
 }
 
 #home{
@@ -32,33 +43,32 @@
   background: transparent;
 }
 
+/*Animación botón */
+
 .button:hover{
   background: rgb(70, 189, 236) !important;
   border: 2px solid rgb(70, 189, 236);
 }
 
-.highlight {
-  color: #e31b6d;
+i:hover{
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
-.a{
-  text-decoration:none;
-  color: #fff;
-}
-
+/*Break point para adaptar boton y estilos */
 
 @media (max-width: 767.98px) {
   #home{
     font-family: "Raleway";
     -webkit-font-smoothing: antialiased;
-    font-size: 17pt;
-    line-height: 20pt;
+    font-size: 17pt !important;
+    line-height: 23pt;
     color: #fff;
     position: absolute;
-    top:55%;
+    top:47%;
     left: 50%;
     transform: translate(-50%,-50%);
-    max-width: 80%;
+    max-width: 90%;
     text-align: center;
   }
   .button {
@@ -73,15 +83,15 @@
   }
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 767.98px) {
   #home{
     font-family: "Raleway";
     -webkit-font-smoothing: antialiased;
-    font-size: 20pt;
+    font-size: 25pt;
     line-height: 20pt;
     color: #fff;
     position: absolute;
-    top:50%;
+    top:47%;
     left: 50%;
     transform: translate(-50%,-50%);
     max-width: 80%;
@@ -92,7 +102,61 @@
     color: #fff;
     box-sizing: inherit;
     display: inline-block;
-    font-size: 13pt;
+    font-size: 15pt;
+    padding: 10px 20px;
+    transition: all 1s;
+    background: transparent;
+  }
+}
+
+@media (min-width: 992px) {
+  #home{
+    font-family: "Raleway";
+    -webkit-font-smoothing: antialiased;
+    font-size: 30pt;
+    line-height: 25pt;
+    color: #fff;
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 70%;
+    text-align: center;
+  }
+
+  .button {
+    border: 1.5px solid #fff;
+    color: #fff;
+    box-sizing: inherit;
+    display: inline-block;
+    font-size: 15pt;
+    padding: 10px 20px;
+    transition: all 1s;
+    background: transparent;
+  }
+}
+
+@media (min-width: 1200px) {
+  #home{
+    font-family: "Raleway";
+    -webkit-font-smoothing: antialiased;
+    font-size: 32pt;
+    line-height: 22pt;
+    color: #fff;
+    position: absolute;
+    top:47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 50%;
+    text-align: center;
+  }
+
+  .button {
+    border: 1.5px solid #fff;
+    color: #fff;
+    box-sizing: inherit;
+    display: inline-block;
+    font-size: 15pt;
     padding: 10px 20px;
     transition: all 1s;
     background: transparent;

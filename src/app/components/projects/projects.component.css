@@ -1,5 +1,7 @@
+/*Estilos generales del componente */
+
 #container {
-  background: url('/assets/img/fondo_FINAL.png');
+  background-color:snow;
   min-height: 100vh;
 }
 
@@ -7,10 +9,10 @@ a{
   text-decoration:none;
 }
 
-
 img:hover {
   filter: opacity(.4);
 }
+
 
 
 
