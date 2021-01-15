@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NameRoutingModule } from './app.routing';
+import { APP_ROUTING } from './app.routing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 //Import componentes
 import { AppComponent } from './app.component';
@@ -29,12 +30,12 @@ import { PortfolioService } from './services/portfolio.service';
   ],
   imports: [
     BrowserModule,
-    NameRoutingModule,
+    APP_ROUTING,
     FormsModule,
     ReactiveFormsModule
   ],
   providers: [
-    PortfolioService,
+    PortfolioService
   ],
   bootstrap: [AppComponent]
 })

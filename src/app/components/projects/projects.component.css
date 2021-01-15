@@ -1,6 +1,6 @@
 /*Estilos generales del componente */
 
-#container {
+body {
   background-color:snow;
   min-height: 100vh;
 }
