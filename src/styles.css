@@ -1,11 +1,11 @@
 /*Estilos generales*/
 
 * {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
 }
 
 p{
@@ -13,6 +13,10 @@ p{
   color: grey;
 }
 
+.shadow:hover{
+  translate: Y(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.50);
+}
 
 /*Animación para fade in en los componentes*/
 

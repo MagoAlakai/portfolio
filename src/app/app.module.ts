@@ -16,6 +16,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 
 //Import Servicios
 import { PortfolioService } from './services/portfolio.service';
+import { SkillsService } from './services/skills.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { PortfolioService } from './services/portfolio.service';
     ReactiveFormsModule
   ],
   providers: [
-    PortfolioService
+    PortfolioService,
+    SkillsService
   ],
   bootstrap: [AppComponent]
 })
