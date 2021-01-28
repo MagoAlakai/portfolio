@@ -17,6 +17,11 @@ body {
   transition-duration: 0.7s;
 }
 
+#foto_bio{
+  translate: Y(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.50);
+}
+
 #tablet{
   width: 65px;
   height: 80px;
