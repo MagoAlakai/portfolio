@@ -6,15 +6,15 @@
       <hr>
 
       <div id="alert" class="animated fadeIn slow alert alert-success d-none text-center" role="alert">
-      Your message has been sent succesfully, see you soon!
+      Your message has been sent succesfully, I will get in contact with you at once!
       </div>
 
-      <form #formContacto="ngForm" (ngSubmit)="onSubmit(formContacto)" class="mx-auto row pt-5 pb-4">
+      <form #formContacto="ngForm" (ngSubmit)="onSubmit($event, formContacto)" class="mx-auto row pt-5 pb-4">
           <div class="form-group mx-auto col-xs-12 col-sm-12 col-md-8 col-lg-6 col-xl-6">
               <label for="exampleInputEmail1">Name & last name</label>
               <input
                   type="text"
-                  name="nombre"
+                  name="user_name"
                   class="form-control"
                   placeholder="Introduce your full name"
                   [ngClass]="{'is-invalid': nombre.touched && !nombre.valid}"
@@ -29,7 +29,7 @@
               <label for="exampleInputEmail1">Email</label>
               <input
                   type="email"
-                  name="email"
+                  name="user_email"
                   class="form-control"
                   placeholder="Introduce your email"
                   [ngClass]="{'is-invalid': email.touched && !email.valid}"
@@ -44,8 +44,8 @@
               <label for="exampleFormControlTextarea1">Message</label>
               <textarea
                   class="form-control"
-                  name="mensaje"
-                  rows="3"
+                  name="message"
+                  rows="6"
                   required
                   [ngClass]="{'is-invalid': mensaje.touched && !mensaje.valid}"
                   #mensaje="ngModel"

@@ -5,6 +5,16 @@
   min-height: 100vh;
 }
 
+.list-group-item:hover{
+  translate: Y(-2px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.25);
+}
+
+.list-group-item{
+  translate: Y(-1.5px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.15);
+}
+
 /*Break point para adaptar cabecera */
 
 @media (min-width: 991.98px) {
