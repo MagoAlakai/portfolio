@@ -18,6 +18,11 @@ body {
   box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
 }
 
+img{
+  width: 40px;
+  height: 40px;
+}
+
 /*Break points para adaptar estilos*/
 
 @media (min-width: 991.98px) {
