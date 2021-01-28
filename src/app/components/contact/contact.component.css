@@ -5,19 +5,37 @@ body {
   height: 100vh;
 }
 
+#form{
+  max-width: 576px;
+  translate: Y(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+#datos{
+  max-width: 576px;
+  min-width: 500px;
+  translate: Y(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
 /*Break points para adaptar estilos*/
 
 @media (min-width: 991.98px) {
-  form {
-    max-width: 75%;
-  }
   #alert{
     margin-top:20px;
     margin-left: 60px;
     margin-right: 60px;
   }
-  .container{
-    min-height: 77vh;
+  .contact{
+    min-height: 50vh;
+    display:flex;
+  }
+  #form{
+    max-width: 500px;
+  }
+
+  #datos{
+    max-width: 500px;
   }
 }
 

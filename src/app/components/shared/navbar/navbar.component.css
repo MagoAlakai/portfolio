@@ -153,13 +153,14 @@ padding: 0;
 }
 /*Fontawesome icons*/
 
-.fas, .fab, .far, #nombre {
+.fas, .fab, .far {
   color:lightgrey;
 }
 
 .barra_nav{
   height: 200px !important;
 }
+
 /*-------------------------------*/
 /*       Hamburger-Cross         */
 /*-------------------------------*/
