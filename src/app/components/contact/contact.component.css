@@ -2,7 +2,7 @@
 
 body {
   background-color:snow;
-  height: 100vh;
+  height: 100%;
 }
 
 #form{
@@ -32,6 +32,12 @@ img:hover{
 }
 
 /*Break points para adaptar estilos*/
+
+@media (min-width: 991.98px) {
+  .container{
+    min-height: 70vh;
+  }
+}
 
 @media (min-width: 1024.98px) {
   #alert{
@@ -97,5 +103,53 @@ img:hover{
     height: 30px;
   }
 
+
+}
+
+@media (max-width: 320px) {
+  h1 {
+    padding-left: 15px;
+    font-size:x-large;
+  }
+
+  h4 {
+    font-size:small;
+  }
+
+  hr{
+    max-width: 90%;
+  }
+  #alert{
+    margin-left: 8px;
+    margin-right: 10px;
+  }
+  form{
+    padding-top: 30px !important;
+  }
+
+  .container{
+    min-height: 80vh;
+  }
+
+  #form{
+    max-width: 225px !important;
+  }
+
+  #datos{
+    max-width: 225px !important;
+  }
+
+  img{
+    width: 20px;
+    height: 20px;
+  }
+
+  button, label, ::placeholder{
+    font-size: small !important;
+  }
+
+  p{
+    font-size: x-small !important;
+  }
 
 }

@@ -33,5 +33,6 @@
   }
   .container{
     min-height: 80vh;
+    padding-left: 25px;;
   }
 }
