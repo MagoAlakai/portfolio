@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactoUsuario } from './../models/contacto.usuario';
 import { Router } from '@angular/router';
+import Swal from 'sweetalert2';
+
+//imports to use emailjs service
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 import{ init } from 'emailjs-com';
 init("user_xWHAsizuYn8plxh4cTDy6");
@@ -37,9 +40,16 @@ export class ContactComponent implements OnInit {
   }
 
   enviarAlert (){
-    const editor: HTMLDivElement = (document.getElementById('alert') as HTMLDivElement);
-    editor.classList.remove('d-none');
-    setTimeout(()=> editor.classList.add('d-none'), 4000);
+  Swal.fire({
+    title: 'Message sent',
+    text: 'Your message has been sent succesfully, I will get in contact with you as soon as possible!',
+    icon: 'success',
+    confirmButtonText: 'Ok',
+  });
+
+    // const editor: HTMLDivElement = (document.getElementById('alert') as HTMLDivElement);
+    // editor.classList.remove('d-none');
+    // setTimeout(()=> editor.classList.add('d-none'), 4000);
   }
 
 
