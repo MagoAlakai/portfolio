@@ -47,9 +47,6 @@ export class ContactComponent implements OnInit {
     confirmButtonText: 'Ok',
   });
 
-    // const editor: HTMLDivElement = (document.getElementById('alert') as HTMLDivElement);
-    // editor.classList.remove('d-none');
-    // setTimeout(()=> editor.classList.add('d-none'), 4000);
   }
 
 

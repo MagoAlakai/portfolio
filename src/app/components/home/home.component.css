@@ -1,4 +1,4 @@
-/*Estilos generales del componente */
+/* Estilos generales del componente*/
 
 body {
   min-height: 100vh;
@@ -161,6 +161,28 @@ i:hover{
     background: transparent;
   }
 }
+
+/*Animación background*/
+
+.wrapper {
+  background: url('/assets/img/Fondo\ Portafolio.jpg');
+  color: #eee;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 200s infinite;
+}
+
+@keyframes animation {
+   100%{
+    background-position:0px -3000px;
+  }
+}
+
 
 
 
